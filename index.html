@@ -28,31 +28,32 @@
   rel="stylesheet"
 />
 </head>
-<body class="bg-[#674baf] h-screen font-body flex flex-col bg-[url(./images/bg-mobile.svg)] bg-no-repeat">
+<body class="bg-[#674baf] h-screen font-body flex flex-col bg-[url(./images/bg-mobile.svg)] bg-no-repeat min-[753px]:bg-[url(./images/bg-desktop.svg)] bg-contain min-[753px]:bg-cover">
 
-  <header class="py-7 flex px-10">
-    <div class="h-[2rem] w-auto ">
+  <header class="py-7 flex px-[10%]">
+    <div class="h-[2rem] w-auto min-[753px]:h-[3rem]">
       <img src="./images/logo.svg" alt="" class="h-full w-full">
     </div>
   </header>
 
-  <main class="text-white flex-1 p-10">
-    <div class="flex flex-col gap-10 h-full"> 
-        <div>
+  <main class="text-white flex-1 py-10 px-[10%]">
+    <div class="flex flex-col gap-10 h-full min-[753px]:flex-row min-[753px]:items-center"> 
+        <div class="min-[753px]:flex-1">
             <img src="./images/illustration-mockups.svg" alt="">
         </div>
-        <div class="flex flex-col gap-5 items-center">
+        <div class="flex flex-col gap-5 items-center min-[753px]:flex-1 ">
             <h1 class="text-2xl font-heading text-center font-medium">Build The Community Your Fans Will Love</h1>
             <p class="text-center text-md">Huddle re-imagines the way we build communities. You have a voice, but so does your audience. 
             Create connections with your users as you engage in genuine discussion.
             </p>
-              <button class="bg-white text-[#674baf] px-[50px] py-2 rounded-full">Register</button>
+            <button class="bg-white text-[#674baf] px-[50px] py-2 rounded-full mb-25 hover:bg-[#e882e8] hover:text-white shadow-lg">Register</button>
+            <div class="flex flex-1 items-center justify-center gap-2 min-[753px]:self-end">
+              <i class="ri-facebook-circle-fill text-3xl"></i>
+              <i class="ri-twitter-fill text-3xl"></i>
+              <i class="ri-instagram-fill text-3xl"></i>
+            </div>
         </div>
-        <div class="flex flex-1 items-center justify-center gap-2">
-            <i class="ri-facebook-circle-fill text-3xl"></i>
-            <i class="ri-twitter-fill text-3xl"></i>
-            <i class="ri-instagram-fill text-3xl"></i>
-        </div>
+        
       </div>
   </main>
     
